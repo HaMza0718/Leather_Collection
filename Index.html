@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leather Collection</title>
+    <!-- google-fontLink -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <!--fontAwesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- css/bootstrap link  -->
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!------------------- Header ------------------->
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-betwwen align-items-center">
+                <div class="logo" data-aos="flip-down">
+                    SnapLeather<span class="jacket">🥼</span>
+                </div>
+                <button type="button" class="nav-toggler">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav id="nav" class="nav">
+                    <ul>
+                        <li class="nav-items"><a href="#home">Home</a></li>
+                        <li class="nav-items"><a href="#about">About</a></li>
+                        <li class="nav-items"><a href="#collection">Collection</a></li>
+                        <li class="nav-items"><a href="#blog">Blog</a></li>
+                        <li class="nav-items"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-------------------- Home -------------------->
+    <section class="home-section" id="home">
+        <div class="home-bg"></div>
+        <div class="container">
+            <div class="row min-vh-100 align-items-center">
+                <div class="home-text" data-aos="zoom-in-up">
+                    <h1>You can have anything you want in life if you dress for it.</h1>
+                    <p>"SnapLeather: Easy elegance at your fingertips, where comfort and style effortlessly come together.".</p>
+                    <button class="btn btn-default"><a href="#packages">Explore</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="Script.js"></script>
+    <!-- AOSlibrary -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 400,
+          duration: 1300,
+      });
+    </script>
+</body>
+</html>
