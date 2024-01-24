@@ -10,44 +10,54 @@
   --shadow: 0 0 15px rgba(0, 0, 0, 0.25);
   --cursive-font: "Dancing Script", cursive;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
 }
+
 ::before,
 ::after {
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth !important;
   overflow-x: hidden;
 }
+
 body {
   font-size: 14px;
   line-height: 1.5;
   -webkit-tap-highlight-color: transparent;
   font-family: "Poppins", sans-serif;
 }
+
 img {
   vertical-align: middle;
   max-width: 100%;
 }
+
 a {
   text-decoration: none;
 }
+
 ul {
   list-style: none;
 }
+
 h1 {
   font-weight: 800;
   color: var(--white);
 }
+
 h2 {
   font-weight: 600;
   color: var(--white);
 }
+
 h3,
 h4,
 h5,
@@ -56,26 +66,33 @@ p {
   font-weight: 500;
   color: var(--white);
 }
+
 p {
   font-size: 16px;
 }
+
 .container {
   max-width: 1170px;
   margin: auto;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
 }
+
 .justify-content-betwwen {
   justify-content: space-between;
 }
+
 .align-items-center {
   align-items: center;
 }
+
 .min-vh-100 {
   min-height: 100vh;
 }
+
 .sec-padding {
   padding: 65px 0;
 }
@@ -85,6 +102,7 @@ p {
   font-weight: bolder;
   color: #eaa023;
 }
+
 .header {
   padding: 12px 0;
   position: fixed;
@@ -93,6 +111,7 @@ p {
   z-index: 99;
   width: 100%;
 }
+
 .header::before {
   content: "";
   position: absolute;
@@ -106,9 +125,11 @@ p {
   transition: transform 0.5s ease;
   transform: translateY(-100%);
 }
+
 .header.sticky::before {
   transform: translateY(0%);
 }
+
 .header .logo {
   cursor: pointer;
   font-size: 1.4rem;
@@ -119,6 +140,7 @@ p {
   align-items: center;
   padding: 0px 15px;
 }
+
 .header .nav-toggler {
   height: 34px;
   width: 44px;
@@ -130,6 +152,7 @@ p {
   align-items: center;
   justify-content: center;
 }
+
 .header .nav-toggler.active {
   position: absolute;
   right: 0;
@@ -137,26 +160,35 @@ p {
   transition: all 0.5s ease;
   transform: translateX(-200px);
 }
+
 .nav-toggler i {
   font-size: 1.5rem;
   color: var(--white);
 }
+
+.nav-toggler i:hover {
+  color: var(--main-color);
+}
+
 .header .nav {
   position: fixed;
   right: 0;
   top: 0;
-  height: 100%;
-  width: 250px;
-  background-color: var(--dark-light);
+  height: 70%;
+  width: 270px;
+  background-color: var(--dark);
   box-shadow: var(--shadow);
+  border-radius: 1rem 0 0 1rem;
   overflow-y: auto;
   padding: 80px 0 40px;
   transition: transform 0.5s ease;
   transform: translateX(100%);
 }
+
 .header .nav.open {
   transform: translateX(0%);
 }
+
 .header .nav ul li a {
   display: block;
   font-size: 25px;
@@ -164,73 +196,211 @@ p {
   padding: 10px 30px;
   transition: color 0.3s ease;
 }
+
 .header .nav ul li a:hover {
   color: var(--main-color);
 }
 
 /******************* Home *************************/
-.home-section{
-    position: relative;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+.home-section {
+  position: relative;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
-.home-section .home-bg{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url('./Images/home_bg.jpg');
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    background-position: center;
-    z-index: -2;
+
+.home-section .home-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("./Images/home_bg.jpg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-position: center;
+  z-index: -2;
 }
-.home-section .min-vh-100{
-    padding: 100px 0;
+
+.home-section .min-vh-100 {
+  padding: 100px 0;
 }
-.home-text{
-    padding: 0 15px;
-    max-width: 700px;
-    width: 100%;
-    margin: auto;
-    text-align: center;
+
+.home-text {
+  padding: 0 15px;
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
 }
-.home-text h1{
-    font-family: var(--cursive-font);
-    font-size: 60px;
-    line-height: 75px;
-    margin: 0 0 5px;
+
+.home-text h1 {
+  font-family: var(--cursive-font);
+  font-size: 60px;
+  line-height: 75px;
+  margin: 0 0 5px;
 }
-.home-text p{
-    margin: 0 0 30px;
+
+.home-text p {
+  margin: 0 0 30px;
 }
+
 .btn{
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: transparent;
-    border-radius: 30px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    font-size: 16px;
-    cursor: pointer;
-    font-family: inherit;
-    color: var(--main-color);
-    line-height: 1.5;
-    border: none;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--main-color);
+  line-height: 1.5;
+  border: 2px solid var(--main-color);
 }
-.btn-default{
-    border: 2px solid var(--main-color);
+
+.btn a {
+  color: var(--white);
 }
-.btn-default:hover{
-    background-color: var(--main-color);
-    color: var(--white);
+/******************* Section-Title *************************/
+.section-title{
+    background-color: var(--dark);
+    box-shadow: var(--shadow);
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 60px;
 }
-.btn-default a{
-    color: var(--white);
+.section-title h2{
+    font-size: 35px;
 }
-.btn-default a:hover{
-    color: var(--white);
+/******************* Collections *************************/
+.collection-section{
+  background-color: var(--dark-light);
 }
+.collection-tabs{
+  padding: 0 15px;
+  width: 100%;
+  text-align: center;
+}
+.hide{
+  display: none;
+}
+.collection-tab-item{
+  font-size: 16px;
+  font-family: inherit;
+  border: 2px solid var(--main-color);
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: transparent;
+  font-weight: 500;
+  color: var(--main-color);
+  cursor: pointer;
+  margin: 0 10px 10px;
+  padding: 2px 6px;
+  transition: color 0.3s ease;
+}
+.collection-tab-item:hover{
+  color: var(--white);
+  border: 2px solid var(--white);
+  transition: color 0.3s ease;
+}
+.collection-tab-item.active{
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+.collection-tab-item.active:hover{
+  transition: color 0.3s ease;
+}
+.collection-section .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+.collection-section .box-container .box{
+  flex:1 1 20rem;
+  background: var(--dark);
+  box-shadow: var(--shadow);
+  border-radius: 1.3rem;
+  border:.1rem solid rgba(0,0,0,.1);
+  position: relative;    
+}
+.collection-section .box-container .box .discount{
+  position: absolute;
+  top:1rem; left:1rem;
+  padding:.7rem 1rem;
+  font-size: 2rem;
+  color:var(--main-color);
+  background: var(--dark-light);
+  z-index: 1;
+  border-radius: .5rem;
+}
+.collection-section .box-container .box .image{
+  position: relative;
+  text-align: center;
+  padding-top: 2rem;
+  overflow:hidden;
+}
+.collection-section .box-container .box .image img{
+  width: 100%;
+  height:25rem;
+}
+.collection-section .box-container .box:hover .image img{
+  transform: scale(1.1);
+}
+.collection-section .box-container .box .image .icons{
+  position: absolute;
+  bottom:-7rem; left:0; right:0;
+  display: flex;
+}
+.collection-section .box-container .box:hover .image .icons{
+  bottom:0;
+}
+.collection-section .box-container .box .image .icons a{
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  width:50%;
+  background:var(--white-light);
+  color:var(--dark-light);
+}
+.collection-section .box-container .box .image .icons .cart-btn{
+  border-left: .1rem solid #fff7;
+  border-right: .1rem solid #fff7;
+  width:100%;
+}
+.collection-section .box-container .box .image .icons a:hover{
+  background:var(--white);
+}
+.collection-section .box-container .box .content{
+  padding:2rem;
+  text-align: center;
+}
+.collection-section .box-container .box .content h3{
+  font-size: 2rem;
+  color:var(--main-color);
+  cursor: pointer;
+}
+.collection-section .box-container .box .content h3:hover{
+  color: var(--white);
+}
+.collection-section .box-container .box .content .price{
+  font-size: 2.2rem;
+  color:var(--white);
+  font-weight: bolder;
+  padding-top: 1rem;
+}
+.collection-section .box-container .box .content .price span{
+  font-size: 1.2rem;
+  color:var(--white-light);
+  font-weight: lighter;
+  text-decoration: line-through;
+}
+
+/******************* About *************************/
+/******************* Blogs *************************/
+/******************* Footer *************************/
+/******************* Responsive *************************/

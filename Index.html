@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leather Collection</title>
     <!-- google-fontLink -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,200;1,300;1,400&display=swap"
+        rel="stylesheet" />
     <!--fontAwesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
     <!-- css/bootstrap link  -->
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
     <!------------------- Header ------------------->
     <header class="header">
@@ -27,8 +30,8 @@
                 <nav id="nav" class="nav">
                     <ul>
                         <li class="nav-items"><a href="#home">Home</a></li>
-                        <li class="nav-items"><a href="#about">About</a></li>
                         <li class="nav-items"><a href="#collection">Collection</a></li>
+                        <li class="nav-items"><a href="#about">About</a></li>
                         <li class="nav-items"><a href="#blog">Blog</a></li>
                         <li class="nav-items"><a href="#contact">Contact</a></li>
                     </ul>
@@ -43,8 +46,107 @@
             <div class="row min-vh-100 align-items-center">
                 <div class="home-text" data-aos="zoom-in-up">
                     <h1>You can have anything you want in life if you dress for it.</h1>
-                    <p>"SnapLeather: Easy elegance at your fingertips, where comfort and style effortlessly come together.".</p>
-                    <button class="btn btn-default"><a href="#packages">Explore</a></button>
+                    <p>
+                        "SnapLeather: Easy elegance at your fingertips, where comfort and
+                        style effortlessly come together.".
+                    </p>
+                    <button class="btn"><a href="#collection">Explore</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------- Collections -------------------->
+    <section class="collection-section sec-padding" id="packages">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>Our Collection</h2>
+                </div>
+            </div>
+            <!-- searchButtons -->
+            <div class="row">
+                <div class="collection-tabs">
+                    <button type="button" class="collection-tab-item active" data-category="all">
+                        All
+                    </button>
+                    <button type="button" class="collection-tab-item" data-target="jackets">
+                        Jackets
+                    </button>
+                    <button type="button" class="collection-tab-item" data-target="shoes">
+                        Shoes
+                    </button>
+                    <button type="button" class="collection-tab-item" data-target="wallets">
+                        Wallets
+                    </button>
+                </div>
+            </div>
+            <div class="box-container card">
+                <!-- ForJackets -->
+                <div class="box" data-category="jacket">
+                    <span class="discount">-10%</span>
+                    <div class="image">
+                        <img src="Images/img-1.webp" alt="">
+                        <div class="icons">
+                            <a href="#" class="cart-btn">Add to cart</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Men's Brown Leather</h3>
+                        <div class="price"> $199.99 <span>$220.99</span> </div>
+                    </div>
+                </div>
+                <div class="box" data-category="jacket">
+                    <span class="discount">-10%</span>
+                    <div class="image">
+                        <img src="Images/img-2.webp" alt="">
+                        <div class="icons">
+                            <a href="#" class="cart-btn">Add to cart</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Black Leather (For Women)</h3>
+                        <div class="price"> $249.99 <span>$260.99</span> </div>
+                    </div>
+                </div>
+                <div class="box" data-category="jacket">
+                    <span class="discount">-10%</span>
+                    <div class="image">
+                        <img src="Images/img-3.webp" alt="">
+                        <div class="icons">
+                            <a href="#" class="cart-btn">Add to cart</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Men's Black Leather</h3>
+                        <div class="price"> $199.99 <span>$220.99</span> </div>
+                    </div>
+                </div>
+                <div class="box" data-category="jacket">
+                    <span class="discount">-10%</span>
+                    <div class="image">
+                        <img src="Images/img-4.webp" alt="">
+                        <div class="icons">
+                            <a href="#" class="cart-btn">Add to cart</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Red Leather (For Women)</h3>
+                        <div class="price"> $199.99 <span>$220.99</span> </div>
+                    </div>
+                </div>
+                <!-- ForShoes -->
+                <div class="box" data-category="jacket">
+                    <span class="discount">-10%</span>
+                    <div class="image">
+                        <img src="Images/img-1.webp" alt="">
+                        <div class="icons">
+                            <a href="#" class="cart-btn">Add to cart</a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Men's Brown Leather</h3>
+                        <div class="price"> $199.99 <span>$220.99</span> </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -53,10 +155,11 @@
     <!-- AOSlibrary -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({
-          offset: 400,
-          duration: 1300,
-      });
+        AOS.init({
+            offset: 400,
+            duration: 1300,
+        });
     </script>
 </body>
+
 </html>
