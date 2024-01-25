@@ -96,7 +96,15 @@ p {
 .sec-padding {
   padding: 65px 0;
 }
-
+/* animation key */
+@keyframes spin01{
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
 /******************* Header *************************/
 .jacket {
   font-weight: bolder;
@@ -252,7 +260,7 @@ p {
   padding: 10px 20px;
   background-color: transparent;
   border-radius: 30px;
-  font-weight: 500;
+  font-weight: 600;
   transition: all 0.3s ease;
   font-size: 16px;
   cursor: pointer;
@@ -261,7 +269,10 @@ p {
   line-height: 1.5;
   border: 2px solid var(--main-color);
 }
-
+.btn:hover{
+  background-color: var(--main-color);
+  color: var(--white);
+}
 .btn a {
   color: var(--white);
 }
@@ -277,12 +288,65 @@ p {
 .section-title h2{
     font-size: 35px;
 }
+/******************* About *************************/
+.about-section{
+  background-color: var(--dark-light);
+}
+.about-text,
+.about-img{
+  width: 50%;
+  padding: 0 15px;
+}
+.about-text h3{
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 15px;
+}
+.about-text h4{
+  font-size: 18px;
+}
+.about-text p{
+  margin: 0 0 15px;
+}
+.about-text .btn{
+  margin: 15px 0 0;
+}
+.about-img img{
+  width: 100%;
+  border-radius: 10px;
+}
+.about-img .img-box{
+  position: relative;
+}
+.about-img .img-box::before{
+  content: '';
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border: 3px dotted var(--white-light);
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+  animation: spin01 10s linear infinite;
+}
+.about-img .img-box h3{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  font-size: 30px;
+  font-family: var(--cursive-font);
+  font-weight: bold;
+  color: var(--white);
+}
 /******************* Collections *************************/
 .collection-section{
   background-color: var(--dark-light);
 }
 .collection-tabs{
-  padding: 0 15px;
+  padding: 2px 15px 15px 2px;
   width: 100%;
   text-align: center;
 }
@@ -290,7 +354,7 @@ p {
   display: none;
 }
 .collection-tab-item{
-  font-size: 16px;
+  font-size: 18px;
   font-family: inherit;
   border: 2px solid var(--main-color);
   border-bottom-left-radius: 15px;
@@ -299,7 +363,7 @@ p {
   font-weight: 500;
   color: var(--main-color);
   cursor: pointer;
-  margin: 0 10px 10px;
+  margin: 0 12px 12px;
   padding: 2px 6px;
   transition: color 0.3s ease;
 }
@@ -330,23 +394,23 @@ p {
 }
 .collection-section .box-container .box .discount{
   position: absolute;
-  top:1rem; left:1rem;
+  top:0; left: 0;
   padding:.7rem 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color:var(--main-color);
   background: var(--dark-light);
   z-index: 1;
-  border-radius: .5rem;
+  border-radius: 1rem 0;
 }
 .collection-section .box-container .box .image{
   position: relative;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 1rem;
   overflow:hidden;
 }
 .collection-section .box-container .box .image img{
   width: 100%;
-  height:25rem;
+  height:21rem;
 }
 .collection-section .box-container .box:hover .image img{
   transform: scale(1.1);
@@ -360,8 +424,8 @@ p {
   bottom:0;
 }
 .collection-section .box-container .box .image .icons a{
-  height: 5rem;
-  line-height: 5rem;
+  height: 4rem;
+  line-height: 4rem;
   font-size: 2rem;
   width:50%;
   background:var(--white-light);
@@ -380,7 +444,7 @@ p {
   text-align: center;
 }
 .collection-section .box-container .box .content h3{
-  font-size: 2rem;
+  font-size: 1.8rem;
   color:var(--main-color);
   cursor: pointer;
 }
@@ -388,19 +452,17 @@ p {
   color: var(--white);
 }
 .collection-section .box-container .box .content .price{
-  font-size: 2.2rem;
+  font-size: 2rem;
   color:var(--white);
   font-weight: bolder;
   padding-top: 1rem;
 }
 .collection-section .box-container .box .content .price span{
-  font-size: 1.2rem;
+  font-size: 1rem;
   color:var(--white-light);
   font-weight: lighter;
   text-decoration: line-through;
 }
-
-/******************* About *************************/
 /******************* Blogs *************************/
 /******************* Footer *************************/
 /******************* Responsive *************************/

@@ -21,3 +21,52 @@ window.addEventListener("scroll", function () {
     document.querySelector(".header").classList.remove("sticky");
   }
 });
+
+// ForCollection
+let allBox = document.querySelectorAll(".card .box");
+let AllBtn = document.querySelectorAll(".collection-tabs button");
+
+AllBtn.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    console.log(e.target);
+    let category = e.target.getAttribute("data-category");
+    console.log(category);
+    if (category == "all") {
+      showBox(allBox);
+    } else {
+      let filterBoxes = [];
+      allBox.forEach((box) => {
+        console.log(box);
+        hideBoxes();
+        if (box.getAttribute("data-category") == category) {
+          filterBoxes.push(box);
+        }
+        showBox(filterBoxes);
+      });
+    }
+    // console.log(filterBoxes)
+  });
+});
+
+function hideBoxes() {
+  allBox.forEach((box) => {
+    box.classList.add("hide");
+  });
+}
+function showBox(boxList) {
+  boxList.forEach((box) => {
+    box.classList.remove("hide");
+  });
+}
+
+let Tabs = document.querySelector(".collection-tabs");
+Tabs.addEventListener("click", function (e) {
+  if (
+    e.target.classList.contains("collection-tab-item") &&
+    !e.target.classList.contains("active")
+  ) {
+    let target = e.target.getAttribute("data-target");
+    Tabs.querySelector(".active").classList.remove("active");
+    e.target.classList.add("active");
+  }
+});
