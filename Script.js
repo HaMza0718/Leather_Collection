@@ -1,6 +1,5 @@
 // For_Navbar
 let navToggler = document.querySelector(".nav-toggler");
-// console.log(navToggler);
 navToggler.addEventListener("click", togggleNav);
 
 function togggleNav() {
@@ -44,7 +43,6 @@ AllBtn.forEach((button) => {
         showBox(filterBoxes);
       });
     }
-    // console.log(filterBoxes)
   });
 });
 

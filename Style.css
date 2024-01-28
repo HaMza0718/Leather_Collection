@@ -74,11 +74,13 @@ p {
 .container {
   max-width: 1170px;
   margin: auto;
+  overflow: hidden;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .justify-content-betwwen {
@@ -94,7 +96,7 @@ p {
 }
 
 .sec-padding {
-  padding: 65px 0;
+  padding: 64px 0;
 }
 
 /* animation key */
@@ -106,6 +108,14 @@ p {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/******************* WhatsAppLogo *************************/
+.whatsapp-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
 }
 
 /******************* Header *************************/
@@ -155,7 +165,7 @@ p {
 .header .nav-toggler {
   height: 34px;
   width: 44px;
-  margin-right: 15px;
+  margin-right: 12px;
   cursor: pointer;
   border: none;
   background-color: transparent;
@@ -186,7 +196,7 @@ p {
   right: 0;
   top: 0;
   height: 70%;
-  width: 270px;
+  width: 255px;
   background-color: var(--dark);
   box-shadow: var(--shadow);
   border-radius: 1rem 0 0 1rem;
@@ -336,7 +346,7 @@ p {
 }
 
 .about-img .img-box::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 100px;
   width: 100px;
@@ -416,7 +426,7 @@ p {
   background: var(--dark);
   box-shadow: var(--shadow);
   border-radius: 1.3rem;
-  border: .1rem solid rgba(0, 0, 0, .1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
@@ -424,7 +434,7 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  padding: .7rem 1rem;
+  padding: 0.7rem 1rem;
   font-size: 1.5rem;
   color: var(--main-color);
   background: var(--dark-light);
@@ -470,8 +480,8 @@ p {
 }
 
 .collection-section .box-container .box .image .icons .cart-btn {
-  border-left: .1rem solid #fff7;
-  border-right: .1rem solid #fff7;
+  border-left: 0.1rem solid #fff7;
+  border-right: 0.1rem solid #fff7;
   width: 100%;
 }
 
@@ -557,7 +567,7 @@ p {
   position: absolute;
   left: 30px;
   right: 30px;
-  top: 88%;
+  top: 81%;
   box-shadow: var(--shadow);
   transform: translateY(50%);
   transition: all 0.5s ease;
@@ -610,14 +620,14 @@ p {
 }
 
 .icons-container .icons {
-  background:var(--dark);
-  border: .1rem solid rgba(0, 0, 0, .1);
+  background: var(--dark);
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   box-shadow: var(--shadow);
   padding: 1rem;
   display: flex;
   align-items: center;
-  flex: 1 1 25rem;
+  flex: 1 1 20rem;
   cursor: pointer;
 }
 
@@ -630,7 +640,7 @@ p {
 
 .icons-container .icons h3 {
   color: var(--white);
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   font-size: 1.3rem;
 }
 
@@ -640,31 +650,37 @@ p {
 }
 
 /******************* Contact *************************/
-.contact{
+.contact {
   background-color: var(--dark-light);
 }
-.contact-items{
+
+.contact-items {
   width: 40%;
   padding: 0 15px;
 }
-.contact-img{
+
+.contact-img {
   width: 60%;
   padding: 0 15px;
 }
-.contact-tabs{
+
+.contact-tabs {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-.contact-items h3{
+
+.contact-items h3 {
   font-size: 30px;
   margin: 0 0 15px;
 }
-.contact-modes{
- display: flex;
- flex-wrap: wrap;
+
+.contact-modes {
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .contact-card {
   display: flex;
   justify-content: center;
@@ -679,12 +695,14 @@ p {
   gap: 1rem;
   margin-top: 10px;
 }
+
 .flexStart {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
 }
+
 .flexCenter {
   display: flex;
   row-gap: 2rem;
@@ -692,26 +710,31 @@ p {
   align-items: center;
   flex-wrap: wrap;
 }
-.flexCenter i{
+
+.flexCenter i {
   color: var(--white);
   font-size: 1.5rem;
 }
+
 .flexColStart {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
-.primaryText{
+
+.primaryText {
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--white);
 }
-.secondaryText{
+
+.secondaryText {
   font-size: 0.8rem;
   font-weight: 400;
   color: var(--white);
 }
+
 .contact-button {
   width: 90%;
   font-size: 17px;
@@ -724,19 +747,23 @@ p {
   border-radius: 5px 18px;
   cursor: pointer;
 }
+
 .contact-button:hover {
   background: var(--white);
   color: var(--main-color);
 }
-.contact-img img{
+
+.contact-img img {
   width: 100%;
   border-radius: 10px;
 }
-.contact-img .img-box{
+
+.contact-img .img-box {
   position: relative;
 }
-.contact-img .img-box::before{
-  content: '';
+
+.contact-img .img-box::before {
+  content: "";
   position: absolute;
   height: 100px;
   width: 100px;
@@ -745,65 +772,73 @@ p {
   top: calc(50% - 50px);
   animation: spin01 10s linear infinite;
 }
-.contact-img .img-box h3{
+
+.contact-img .img-box h3 {
   position: absolute;
   left: 50%;
   top: 50%;
   width: 100%;
   max-width: 250px;
   text-align: center;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   font-size: 40px;
   font-family: var(--cursive-font);
   font-weight: bolder;
   color: var(--white);
 }
+
 /******************* Footer *************************/
-.footer{
+.footer {
   padding: 50px 0;
-  background-image: url('./Images/footer.jpeg');
+  background-image: url("./Images/footer.jpeg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   position: relative;
-  z-index: 1; 
-  overflow: hidden; 
+  z-index: 1;
+  overflow: hidden;
 }
-.footer::before{
-  content: '';
+
+.footer::before {
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: -1;
 }
-.footer-item{
+
+.footer-item {
   width: calc(100% / 4);
   padding: 0 15px;
 }
-.footer-item h3{
+
+.footer-item h3 {
   font-size: 22px;
   font-weight: 600;
   margin: 0 0 15px 0;
 }
-.footer-item .follow{
+
+.footer-item .follow {
   margin-top: 2rem;
 }
-#font-change{
+
+#font-change {
   color: var(--white);
   font-size: 35px;
   font-family: var(--cursive-font);
   font-weight: bolder;
 }
+
 .card-client {
   background: var(--dark-light);
   width: 13rem;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 18px;
+  padding-right: 18px;
   border: 4px solid var(--dark);
   box-shadow: 0 6px 10px var(--shadow);
   border-radius: 10px;
@@ -820,8 +855,8 @@ p {
 .user-picture {
   overflow: hidden;
   object-fit: cover;
-  width: 5rem;
-  height: 5rem;
+  width: 4.8rem;
+  height: 4.8rem;
   border: 4px solid var(--dark);
   border-radius: 999px;
   display: flex;
@@ -831,7 +866,7 @@ p {
 }
 
 .user-picture svg {
-  width: 2.5rem;
+  width: 2.3rem;
   fill: currentColor;
 }
 
@@ -844,7 +879,7 @@ p {
 
 .name-client span {
   display: block;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 13px;
 }
 
@@ -909,18 +944,22 @@ p {
   opacity: 1;
   transform: translate(-50%, -130%);
 }
-.footer-item p{
+
+.footer-item p {
   line-height: 25px;
   cursor: pointer;
 }
-.footer-item p:hover{
+
+.footer-item p:hover {
   font-weight: bold;
   color: var(--main-color);
 }
-.social-links{
+
+.social-links {
   margin-top: 15px;
 }
-.social-links a{
+
+.social-links a {
   display: inline-flex;
   height: 40px;
   width: 40px;
@@ -931,37 +970,197 @@ p {
   transition: color 0.3s ease;
   transition: transform 0.3s ease;
 }
-.social-links a:hover{
+
+.social-links a:hover {
   color: var(--main-color);
   transform: skew(30deg);
   font-weight: bolder;
 }
-.quick-links{
+
+.quick-links {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.quick-links a{
+
+.quick-links a {
   color: var(--white);
   font-size: 1rem;
 }
-.quick-links a:hover{
+
+.quick-links a:hover {
   color: var(--main-color);
 }
-.top-button{
-  float: right;
+
+.copy-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  font-size: 1.7rem;
 }
-.top-button button{
-  font-size: 45px;
-  margin-right: 30px;
-  margin-bottom: -20px;
-  color: var(--white-light);
-  background-color: transparent;
-  border: none;
-  cursor: -webkit-grabbing;
-}
-.top-button button:hover{
-  color: var(--main-color);
-  font-size: 55px;
-}
+
 /******************* Responsive *************************/
+@media(max-width:991px) {
+  .about-section .row {
+    margin: 8px;
+  }
+
+  .about-text h3 {
+    font-size: 22px;
+  }
+
+  .about-text h4 {
+    font-size: 16px;
+  }
+
+  .collection-section .box-container {
+    margin: 18px;
+  }
+
+  .blog-item {
+    width: 50%;
+  }
+
+  .blog-item img {
+    min-width: 100%;
+    border-radius: 12px;
+  }
+
+  .blog-item-info {
+    width: 83%;
+  }
+
+  .blog-item:not(:last-child) {
+    margin-bottom: 95px;
+  }
+
+  .contact-img,
+  .contact-items {
+    width: 100%;
+    margin: 6px;
+  }
+
+  .footer-item {
+    width: calc(100% / 3);
+    padding: 0 15px;
+  }
+}
+
+@media(max-width:768px) {
+  .home-text h1 {
+    font-size: 40px;
+    line-height: 42px;
+  }
+
+  .about-text,
+  .about-img {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .about-text h3 {
+    font-size: 24px;
+  }
+
+  .collection-tabs {
+    width: 100%;
+  }
+
+  .box {
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+  }
+
+  .box img {
+    min-width: 100%;
+  }
+
+  .contact-text h3 {
+    font-size: 26px;
+  }
+
+  .contact-text button {
+    margin-left: 10px;
+  }
+
+  .footer-item {
+    width: 50%;
+  }
+
+  .footer-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  #font-change {
+    margin-left: 12px;
+  }
+}
+
+@media(max-width:575px) {
+  .blog-item {
+    width: 100%;
+    margin: 8px;
+    margin-bottom: 32px;
+  }
+
+  .box-container {
+    padding: 25px 0;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-section .row-content h3 {
+    font-size: 22px;
+  }
+
+  .blog-section .row-content span {
+    font-size: 14px;
+  }
+
+  .blog-section .row-content button {
+    font-size: 16px;
+  }
+
+  .icons-container .icons img {
+    height: 4rem;
+    margin-right: 1.5rem;
+  }
+
+  .icons-container .icons h3 {
+    padding-bottom: 0.4rem;
+    font-size: 1rem;
+  }
+}
+
+@media(max-width:412px) {
+  .contact-card {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .primaryText {
+    font-size: 13px;
+  }
+
+  .contact-button {
+    font-size: 13px;
+  }
+
+  .footer-item {
+    width: calc(100%/2);
+  }
+
+  .card-client {
+    width: 10rem;
+    height: 95%;
+  }
+
+  .name-client {
+    font-size: 15px;
+  }
+}
