@@ -1016,7 +1016,9 @@ p {
 
 /******************* Responsive *************************/
 @media(max-width:991px) {
-  .about-section .row {
+
+  .about-text,
+  .about-img {
     margin: 8px;
   }
 
@@ -1116,7 +1118,7 @@ p {
   .blog-item {
     width: 100%;
     margin: 8px;
-    margin-bottom: 32px;
+    margin-bottom: 25px;
   }
 
   .box-container {
