@@ -42,6 +42,7 @@ img {
 
 a {
   text-decoration: none;
+  color: var(--white);
 }
 
 ul {
@@ -753,6 +754,15 @@ p {
   color: var(--main-color);
 }
 
+.contact-button a {
+  color: var(--white);
+}
+
+.contact-button a:hover {
+  background: var(--white);
+  color: var(--main-color);
+}
+
 .contact-img img {
   width: 100%;
   border-radius: 10px;
@@ -952,6 +962,10 @@ p {
 
 .footer-item p:hover {
   font-weight: bold;
+  color: var(--main-color);
+}
+
+.footer-item p a:hover {
   color: var(--main-color);
 }
 

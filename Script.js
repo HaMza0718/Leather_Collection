@@ -68,3 +68,14 @@ Tabs.addEventListener("click", function (e) {
     e.target.classList.add("active");
   }
 });
+//ForCopyPhoneNumber
+function copyPhoneNumber(phoneNumber) {
+  navigator.clipboard
+    .writeText(phoneNumber)
+    .then(() => {
+      alert("Phone number copied to clipboard: " + phoneNumber);
+    })
+    .catch((err) => {
+      console.error("Error copying phone number: ", err);
+    });
+}
