@@ -1086,9 +1086,10 @@ p {
     width: 100%;
   }
   .box-container{
-    min-width: 100%;
+    text-align: center;
 }
   .box {
+     margin: 0 auto;
      min-width: 100%;
   }
 
