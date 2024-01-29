@@ -24,7 +24,7 @@ window.addEventListener("scroll", function () {
 // ForCollection
 let allBox = document.querySelectorAll(".card .box");
 let AllBtn = document.querySelectorAll(".collection-tabs button");
-
+// console.log(allBox)
 AllBtn.forEach((button) => {
   button.addEventListener("click", (e) => {
     console.log(e.target);
@@ -35,7 +35,7 @@ AllBtn.forEach((button) => {
     } else {
       let filterBoxes = [];
       allBox.forEach((box) => {
-        console.log(box);
+        // console.log(box);
         hideBoxes();
         if (box.getAttribute("data-category") == category) {
           filterBoxes.push(box);
@@ -43,6 +43,7 @@ AllBtn.forEach((button) => {
         showBox(filterBoxes);
       });
     }
+    // console.log(filterBoxes)
   });
 });
 
